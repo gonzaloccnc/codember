@@ -1,0 +1,35 @@
+{
+  "name": "typeScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev:watch": "nodemon --exec ts-node --files src/index.ts",
+    "dev:start": "ts-node --files src/main/typescript/challenge01.ts",
+    "format": "prettier --write ./src",
+    "lint": "eslint --fix ./src --ext .ts",
+    "out": "tsc",
+    "test:dev": "vitest",
+    "test": "vitest -w=false",
+    "test:coverage": "vitest run --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "nodemon": "3.0.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.2.2",
+    "vitest": "0.34.6"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.10"
+  }
+}
