@@ -7,15 +7,15 @@ import { compileThisWord } from '../../main/typescript/challenge02'
 "&" Prints the current numeric value.
 */
 
-describe('should be count repeats words and return string', () => {
-  test('count repeat words input 1', () => {
+describe('Testing challenge 2 from codember 2023, its a mini compiler!!', () => {
+  test('Should be returns a string depending on how many prints string (&) there are', () => {
     const input = '##*&'
     const shouldBe = '4'
 
     expect(compileThisWord(input)).toBe<string>(shouldBe)
   })
 
-  test('count repeats words input 2 from codember', () => {
+  test('Should be returns a string depending on how many prints string (&) there are', () => {
     const input = '&##&*&@&'
     const shouldBe = '0243'
     expect(compileThisWord(input)).toBe<string>(shouldBe)
